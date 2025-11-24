@@ -71,7 +71,7 @@ const Index = () => {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
+  }, [nextSlide, prevSlide]);
 
   return (
     <div className="relative w-full h-screen overflow-hidden bg-black">
